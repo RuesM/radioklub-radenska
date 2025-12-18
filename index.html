@@ -1,0 +1,66 @@
+<!-- FILE: index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Radioklub Radenska</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+<h1 data-i18n="title">Radioklub Radenska</h1>
+<p data-i18n="subtitle">Local amateur radio club</p>
+</header>
+
+
+<nav>
+<div>
+<a href="#about" data-i18n="nav_about">About</a>
+<a href="#members" data-i18n="nav_members">Members</a>
+<a href="#contests" data-i18n="nav_contests">Contests</a>
+<a href="#history" data-i18n="nav_history">History</a>
+</div>
+<div class="controls">
+<select id="langSelect">
+<option value="en">EN</option>
+<option value="sl">SL</option>
+</select>
+<button id="themeToggle">🌙</button>
+</div>
+</nav>
+
+
+<section id="about">
+<h2 data-i18n="about_title">About</h2>
+<p data-i18n="about_text"></p>
+</section>
+<section id="members">
+<h2 data-i18n="members_title">Members</h2>
+<p data-i18n="members_text"></p>
+</section>
+<section id="contests">
+<h2 data-i18n="contests_title">Contests</h2>
+<p data-i18n="contests_text"></p>
+</section>
+<section id="history">
+<h2 data-i18n="history_title">History</h2>
+<p data-i18n="history_text"></p>
+</section>
+
+
+<footer>
+&copy; <span id="year"></span> Radioklub Radenska
+</footer>
+
+
+<div id="cookieBanner" class="cookie-banner">
+<p>This site uses cookies to store language and theme preferences.</p>
+<button id="acceptCookies">Accept</button>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
+
