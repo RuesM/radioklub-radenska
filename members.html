@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="sl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Člani - Radioklub Radenska</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html">
+      <div class="logo"></div>
+      <div>
+        <h1>Radioklub Radenska <small class="mono">S59DTB</small></h1>
+      </div>
+    </a>
+    <nav class="links">
+      <a href="index.html#about">O klubu</a>
+      <a href="index.html#members">Člani</a>
+      <a href="index.html#contests">Tekmovanja</a>
+      <a href="index.html#history">Zgodovina</a>
+      <a href="index.html#location">Lokacija</a>
+      <a href="index.html#contact">Kontakt</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="section">
+  <div class="wrap">
+    <h3>Člani Kluba</h3>
+    <div class="card">
+      <table style="width: 100%; border-collapse: collapse;">
+        <thead>
+          <tr>
+            <th style="border: 1px solid var(--line); padding: 8px; text-align: left;">Ime</th>
+            <th style="border: 1px solid var(--line); padding: 8px; text-align: left;">Klicni Znak</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="border: 1px solid var(--line); padding: 8px;">Janez Novak</td>
+            <td style="border: 1px solid var(--line); padding: 8px;">S59ABC</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid var(--line); padding: 8px;">Marija Kovač</td>
+            <td style="border: 1px solid var(--line); padding: 8px;">S59DEF</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid var(--line); padding: 8px;">Andrej Žižek</td>
+            <td style="border: 1px solid var(--line); padding: 8px;">S59GHI</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid var(--line); padding: 8px;">Petra Horvat</td>
+            <td style="border: 1px solid var(--line); padding: 8px;">S59JKL</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid var(--line); padding: 8px;">Luka Božič</td>
+            <td style="border: 1px solid var(--line); padding: 8px;">S59MNO</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    © <span id="y"></span> Radioklub Radenska · S59DTB
+  </div>
+</footer>
+
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

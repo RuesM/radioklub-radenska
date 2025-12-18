@@ -1,66 +1,141 @@
-<!-- FILE: index.html -->
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="sl">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Radioklub Radenska</title>
-<link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Radioklub Radenska – S59DTB</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<header>
-<h1 data-i18n="title">Radioklub Radenska</h1>
-<p data-i18n="subtitle">Local amateur radio club</p>
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#">
+      <div class="logo"></div>
+      <div>
+        <h1>Radioklub Radenska <small class="mono">S59DTB</small></h1>
+      </div>
+    </a>
+    <nav class="links">
+      <a href="#about" data-i18n="nav_about">O klubu</a>
+      <a href="#history" data-i18n="nav_history">Zgodovina</a>
+      <a href="members.html" data-i18n="nav_members">Člani</a>
+      <a href="#contests" data-i18n="nav_contests">Tekmovanja</a>
+      <a href="#location">Lokacija</a>
+      <a href="#contact">Kontakt</a>
+    </nav>
+    <select id="langSelect" class="btn">
+      <option value="en">EN</option>
+      <option value="sl">SL</option>
+    </select>
+    <button id="themeToggle" class="btn">🌙</button>
+  </div>
 </header>
 
+<main>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-card">
+      <div class="kicker"><span class="dot"></span> VHF / UHF / SHF+</div>
+      <h2>Radioklub Radenska</h2>
+      <p>
+        Radioamaterski klub z močnim poudarkom na VHF, UHF in višjih bandih.
+        Tekmujemo iz lokacije Kocjan pod klicnim znakom <b class="mono">S59P</b>.
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="#contests">S59P contest postaja</a>
+        <a class="btn" href="#contact">Pridruži se</a>
+      </div>
 
-<nav>
-<div>
-<a href="#about" data-i18n="nav_about">About</a>
-<a href="#members" data-i18n="nav_members">Members</a>
-<a href="#contests" data-i18n="nav_contests">Contests</a>
-<a href="#history" data-i18n="nav_history">History</a>
-</div>
-<div class="controls">
-<select id="langSelect">
-<option value="en">EN</option>
-<option value="sl">SL</option>
-</select>
-<button id="themeToggle">🌙</button>
-</div>
-</nav>
+      <div class="stats">
+        <div class="stat"><b class="mono">S59DTB</b><span>Klubski klicni znak</span></div>
+        <div class="stat"><b class="mono">S59P</b><span>Contest klicni znak</span></div>
+        <div class="stat"><b class="mono">JN86AO</b><span>Locator</span></div>
+        <div class="stat"><b>Kocjan</b><span>Contest lokacija</span></div>
+      </div>
+    </div>
 
-
-<section id="about">
-<h2 data-i18n="about_title">About</h2>
-<p data-i18n="about_text"></p>
+    <div class="hero-card">
+      <h3>Naša dejavnost</h3>
+      <ul class="list">
+        <li>VHF / UHF / SHF+ contesti</li>
+        <li>Postavljanje antenskih sistemov</li>
+        <li>Terensko delo in optimizacija postaje</li>
+      </ul>
+    </div>
+  </div>
 </section>
-<section id="members">
-<h2 data-i18n="members_title">Members</h2>
-<p data-i18n="members_text"></p>
-</section>
-<section id="contests">
-<h2 data-i18n="contests_title">Contests</h2>
-<p data-i18n="contests_text"></p>
-</section>
-<section id="history">
-<h2 data-i18n="history_title">History</h2>
-<p data-i18n="history_text"></p>
+
+<section id="members" class="section">
+  <div class="wrap">
+    <h3 data-i18n="members_title">Člani</h3>
+    <div class="card">
+      <h4>Nekateri člani:</h4>
+      <ul class="list">
+        <li>Janko Šauperl (S55WT)</li>
+        <li>Matej Zamuda (S56ZM)</li>
+        <li>Drago Mir (S57MRI)</li>
+        <li>Drago Turin (S59A)</li>
+        <li>Marko Dundek (S53MD)</li>
+      </ul>
+      <p data-i18n="members_link"></p>
+    </div>
+  </div>
 </section>
 
+<section id="history" class="section">
+  <div class="wrap">
+    <h3 data-i18n="history_title">Zgodovina</h3>
+    <div class="card">
+      <p data-i18n="history_text">Dolga tradicija radioamaterske dejavnosti.</p>
+    </div>
+  </div>
+</section>
 
-<footer>
-&copy; <span id="year"></span> Radioklub Radenska
+<section id="contests" class="section">
+  <div class="wrap">
+    <h3 data-i18n="contests_title">Tekmovanja</h3>
+    <div class="card">
+      <p data-i18n="contests_text">Sodelovanje na domačih in mednarodnih UKV tekmovanjih.<a href="https://slovhf.net/statistika-ukv-pokal/">Zmagovalci S5 UKV pokala: 2013 - 2025.</a></p>
+    </div>
+  </div>
+</section>
+
+<section id="location_title" class="section">
+  <div class="wrap">
+    <h3>Lokacija</h3>
+    <div class="card">
+      <p data-i18n="location_text">Naša tekmovalna lokacija je v Kocjanu pri Radencih (JN86AO).</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="wrap">
+    <h3>Kontakt</h3>
+    <div class="card">
+      <p class="mono">
+        Email: klub@radioklub-radenska.si<br>
+        Naslov: Kocjan 1, 9252 Radenci, Slovenija
+      </p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    © <span id="y"></span> Radioklub Radenska · S59DTB
+  </div>
 </footer>
 
-
-<div id="cookieBanner" class="cookie-banner">
-<p>This site uses cookies to store language and theme preferences.</p>
-<button id="acceptCookies">Accept</button>
+<div id="cookieBanner" style="display: none; position: fixed; bottom: 0; left: 0; right: 0; background: var(--card); border-top: 1px solid var(--line); padding: 12px; text-align: center;">
+  <p>This website uses cookies to remember your language and theme preferences.</p>
+  <button id="acceptCookies" class="btn">Accept</button>
 </div>
-
 
 <script src="script.js"></script>
 </body>
 </html>
-
